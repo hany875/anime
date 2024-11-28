@@ -1,38 +1,134 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Aerial Quiz</title>
-    </head>
-    <body onload="alert('The Aerial Quiz Has Loaded')">
-        <center>
-            <h1>The Aerial Quiz</h1>
-            <h3>Q1 How Long does it take for Aerial Plants to grow?</h3>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aerial Quiz</title>
+    <!-- Google Fonts for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #f0f8ff; /* Light sky color for background */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
 
-            <button onclick="alert('Correct')">632+ Years</button>
-            <button onclick="alert('Wrong')">532+ Years</button>
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            color: #00aaff;
+            font-size: 3em;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+            margin-top: 20px;
+        }
 
-            <h3>Q2 What are rods found on Aerial Plants formed with?</h3>
+        h3 {
+            font-size: 1.5em;
+            color: #333;
+            margin: 20px 0;
+            font-weight: 500;
+        }
 
-            <button onclick="alert('Correct')">Diamonds</button>
-            <button onclick="alert('Wrong')">Quartz</button>
+        button {
+            background-color: #00aaff;
+            color: white;
+            padding: 15px 30px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
 
-            <h3>Q3  What do the inhabitants bear?</h3>
+        button:hover {
+            background-color: #0088cc;
+            transform: scale(1.1);
+        }
 
-            <button onclick="alert('Wrong')">Hooves</button>
-            <button onclick="alert('Correct')">Wings</button>
+        button:focus {
+            outline: none;
+        }
 
-            <h3>Q4 What edible seeds do Cloud Vines Produce?</h3>
+        /* Submit link button style */
+        a.submit-btn {
+            display: inline-block;
+            background-color: #00aaff;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 30px;
+            transition: background-color 0.3s;
+        }
 
-            <button onclick="alert('Correct')">Nimbus Pods</button>
-            <button onclick="alert('Wrong')">Chakra Pods</button>
+        a.submit-btn:hover {
+            background-color: #0088cc;
+        }
 
-            <h3>Q5 When does one Air Fruit bloom?</h3>
+        hr {
+            border: 1px solid #00aaff;
+            width: 80%;
+            margin: 20px auto;
+        }
 
-            <button onclick="alert('Wrong')">Millenium</button>
-            <button onclick="alert('Correct')">Century</button>
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
 
-            <hr>
-            <a href="https://youtube.com/shorts/SXHMnicI6Pg?si=b7XyQwsftK6cQUlb">Submit</a>
-        </center>
-    </body>
+            h3 {
+                font-size: 1.2em;
+            }
+
+            button {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
+
+            a.submit-btn {
+                font-size: 1em;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body onload="alert('The Aerial Quiz Has Loaded')">
+    <h1>The Aerial Quiz</h1>
+
+    <!-- Question 1 -->
+    <h3>Q1: How Long does it take for Aerial Plants to grow?</h3>
+    <button onclick="alert('Correct! It takes 632+ years for Aerial Plants to grow.')">632+ Years</button>
+    <button onclick="alert('Wrong! Aerial Plants take more time to grow.')">532+ Years</button>
+
+    <!-- Question 2 -->
+    <h3>Q2: What are rods found on Aerial Plants formed with?</h3>
+    <button onclick="alert('Correct! They are formed with diamonds.')">Diamonds</button>
+    <button onclick="alert('Wrong! Aerial Plant rods are made of something much rarer.')">Quartz</button>
+
+    <!-- Question 3 -->
+    <h3>Q3: What do the inhabitants bear?</h3>
+    <button onclick="alert('Wrong! The inhabitants don\'t have hooves.')">Hooves</button>
+    <button onclick="alert('Correct! The inhabitants have wings, adapted to the aerial environment.')">Wings</button>
+
+    <!-- Question 4 -->
+    <h3>Q4: What edible seeds do Cloud Vines Produce?</h3>
+    <button onclick="alert('Correct! The seeds are called Nimbus Pods.')">Nimbus Pods</button>
+    <button onclick="alert('Wrong! The seeds are different. Try again!')">Chakra Pods</button>
+
+    <!-- Question 5 -->
+    <h3>Q5: When does one Air Fruit bloom?</h3>
+    <button onclick="alert('Wrong! Air Fruits bloom only once a century.')">Millennium</button>
+    <button onclick="alert('Correct! Air Fruits bloom once every century.')">Century</button>
+
+    <hr>
+
+    <a href="https://youtube.com/shorts/SXHMnicI6Pg?si=b7XyQwsftK6cQUlb" class="submit-btn">Submit</a>
+
+</body>
 </html>
